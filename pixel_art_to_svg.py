@@ -16,8 +16,6 @@ def grid_to_animated_svg(grid, colors, animated_objects = None, filename="animat
                         "pixel_colors": obj["colors"],
                         "duration": obj["duration"]
                     }
-                # Remove it from that animated_objects lists
-                animated_objects.remove(obj)
 
     # SVG Head Code File
     svg = [f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" shape-rendering="crispEdges">']
